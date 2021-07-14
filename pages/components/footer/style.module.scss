@@ -1,0 +1,95 @@
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0;
+  .navigations {
+    display: flex;
+    .logo {
+    //   text-align: center;
+    margin-right: 3.3em;
+      a {
+        text-decoration: none;
+        margin-bottom: 2em;
+        font-size: 0.9em;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        padding-top: 2em;
+        padding-left: 0;
+        li {
+            margin-right: 0.8em;
+          a {
+            text-decoration: none;
+            div {
+                img {
+                    font-size:4em
+                }
+            }
+          }
+        }
+      }
+    }
+    .menu {
+        margin-right: 3.3em;
+        ul {
+            list-style: none;
+            margin-top: 0;
+            li {
+                margin-bottom: 1em;
+                a {
+                    text-decoration: none;
+                    color: hsl(0, 0%, 98%);
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    .menu_cont {
+        ul {
+            list-style: none;
+            margin-top: 0;
+            li {
+                margin-bottom: 1em;
+                a {
+                    text-decoration: none;
+                    color: hsl(0, 0%, 98%);
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+  }
+  .btn_reserved {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      .btn {
+        background: rgb(45, 193, 172);
+        background: linear-gradient(
+          90deg,
+          rgba(45, 193, 172, 1) 5%,
+          rgba(49, 208, 106, 0.9528186274509804) 35%,
+          rgba(45, 186, 196, 1) 60%
+        );
+        border-radius: 4em;
+        width: 12em;
+        min-width: 10em;
+        border: none;
+        color: hsl(0, 0%, 100%);
+        height: 3em;
+        cursor: pointer;
+        // margin-top: auto;
+        // margin-bottom: auto;
+      }
+      .rights {
+          color: hsl(233, 8%, 62%);
+          margin-bottom: 1em;
+          text-align:left;
+          display: inline-block;
+          font-size: 0.8em;
+      }
+  }
+}

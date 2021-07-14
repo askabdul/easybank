@@ -1,0 +1,45 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  overflow-x: visible !important;
+  .logo {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .navigation {
+    .nav_links {
+      list-style: none;
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      li {
+        a {
+          text-decoration: none;
+          margin-right: 2em;
+          color: #bcbbc0;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  button {
+    background: rgb(45, 193, 172);
+    background: linear-gradient(
+      90deg,
+      rgba(45, 193, 172, 1) 5%,
+      rgba(49, 208, 106, 0.9528186274509804) 35%,
+      rgba(45, 186, 196, 1) 60%
+    );
+    border-radius: 4em;
+    min-width: 12em;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    height: 3em;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+  }
+}
