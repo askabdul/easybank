@@ -6,6 +6,10 @@ import Online from "./../../../public/images/icon-online.svg";
 import Budgeting from "./../../../public/images/icon-budgeting.svg";
 import Onboarding from "./../../../public/images/icon-onboarding.svg";
 import Open from "./../../../public/images/icon-api.svg";
+import Confetti from "./../../../public/images/image-confetti.jpg";
+import Currency from "./../../../public/images/image-currency.jpg";
+import Plane from "./../../../public/images/image-plane.jpg";
+import Restaurant from "./../../../public/images/image-restaurant.jpg";
 
 const home = () => {
   return (
@@ -81,6 +85,68 @@ const home = () => {
               pension, and much more from one <br />
               account. Tracking your money has <br />
               never been easier
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className={homestyle.all_articles}>
+        <h2>Latest Articles</h2>
+        <div className={homestyle.articles}>
+          <div className={homestyle.money}>
+            <div className={homestyle.currency_pic}>
+              <Image src={Currency} alt="currency pic" />
+            </div>
+            <small>By Claire Robinson</small>
+            <h3>
+              Receive money in any <br /> currency with no fees
+            </h3>
+            <p>
+              The world is getting smaller and <br /> we're becoming more
+              mobile. So <br /> why should you be forced to only <br /> receive
+              money in a single...
+            </p>
+          </div>
+          <div className="restaurant">
+            <div>
+              <Image src={Restaurant} alt="restaurant pic" />
+            </div>
+            <small>By Wilson Hutton</small>
+            <h3>
+              Treat yourself without <br /> worrying about money
+            </h3>
+            <p>
+              Our simple budgeting feature <br /> allows you to separate out
+              your <br /> spending and set realistic limits <br /> each month.
+              That means you...
+            </p>
+          </div>
+          <div className="plane">
+            <div>
+              <Image src={Plane} alt="plane pic" />
+            </div>
+            <small>By Wilson Hutton</small>
+            <h3>
+              Take your Easybank card
+              <br /> wherever you go
+            </h3>
+            <p>
+              We want you to enjoy your travels. <br /> This is why we don't
+              charge any <br /> fees on purchases while you're
+              <br /> abroad. We'll even show you...
+            </p>
+          </div>
+          <div className="confetti">
+            <div>
+              <Image src={Confetti} alt="confetti pic" />
+            </div>
+            <small>By Claire Robinson</small>
+            <h3>
+              Our invite-only Beta <br /> accounts are now
+            </h3>
+            <p>
+              After a lot of hardwork by the <br /> whole team, we're excited to
+              launch <br /> our closed beta. it's easy to request <br /> an
+              invite through a site...
             </p>
           </div>
         </div>

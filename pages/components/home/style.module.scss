@@ -83,8 +83,6 @@
       & > div {
         div {
           width: 3em;
-          img {
-          }
         }
         h3 {
           font-weight: 300;
@@ -95,6 +93,56 @@
           font-size: 0.9em;
           line-height: 1.5;
           margin-bottom: 1.7em;
+        }
+      }
+    }
+  }
+  .all_articles {
+    background-color: hsl(0, 0%, 98%);
+    padding: 4em 0;
+    h2 {
+      font-weight: 300;
+      font-size: 1.5em;
+      margin-left: 10em;
+      margin-bottom: 2em;
+    }
+    .articles {
+      display: flex;
+      justify-content: center;
+
+      & > div {
+        margin-right: 6em;
+        background-color: #fff;
+        border-radius: 0.5em;
+        &:last-of-type {
+          margin-right: unset;
+        }
+        div {
+          div {
+            div {
+              img {
+                width: 14em;
+                height: 10em;
+              }
+            }
+          }
+        }
+        small {
+          color: hsl(220, 5%, 68%);
+          display: inline-block;
+          margin-top: 1em;
+          padding: 0 1.3em;
+          font-size: 0.6em;
+        }
+        h3 {
+          font-size: 0.9em;
+          font-weight: 300;
+          padding: 0 1.3em;
+        }
+        p {
+          color: hsl(220, 5%, 68%);
+          font-size: 0.75em;
+          padding: 0 1.3em;
         }
       }
     }
