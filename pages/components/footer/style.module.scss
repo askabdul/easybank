@@ -22,9 +22,13 @@
             margin-right: 0.8em;
           a {
             text-decoration: none;
+            img {
+              color: red;
+            }
             div {
                 img {
-                    font-size:4em
+                    font-size:4em;
+             
                 }
             }
           }
@@ -83,6 +87,15 @@
         cursor: pointer;
         // margin-top: auto;
         // margin-bottom: auto;
+        &:hover {
+          background: rgb(131, 218, 203);
+          background: linear-gradient(
+            90deg,
+            rgb(94, 207, 190) 5%,
+            rgba(88, 168, 120, 0.953) 35%,
+            rgb(29, 159, 168) 60%
+          );
+        }
       }
       .rights {
           color: hsl(233, 8%, 62%);

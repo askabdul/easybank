@@ -1,9 +1,10 @@
 .home {
+  overflow-x: hidden;
   .hero {
     //   display: grid;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     // justify-content: space-evenly;
     background-color: hsl(0, 0%, 98%);
     // overflow-x: hidden;
@@ -36,6 +37,15 @@
         margin-top: auto;
         margin-bottom: auto;
         cursor: pointer;
+        &:hover {
+          background: rgb(131, 218, 203);
+          background: linear-gradient(
+            90deg,
+            rgb(94, 207, 190) 5%,
+            rgba(88, 168, 120, 0.953) 35%,
+            rgb(29, 159, 168) 60%
+          );
+        }
       }
     }
     .caption_image {
@@ -103,7 +113,7 @@
     h2 {
       font-weight: 300;
       font-size: 1.5em;
-      margin-left: 10em;
+      margin-left: 10.5em;
       margin-bottom: 2em;
     }
     .articles {
@@ -113,7 +123,8 @@
       & > div {
         margin-right: 6em;
         background-color: #fff;
-        border-radius: 0.5em;
+        border-radius: 0.4em;
+        padding-bottom: 1em;
         &:last-of-type {
           margin-right: unset;
         }
@@ -131,18 +142,49 @@
           color: hsl(220, 5%, 68%);
           display: inline-block;
           margin-top: 1em;
-          padding: 0 1.3em;
+          padding: 0 2em;
           font-size: 0.6em;
         }
         h3 {
           font-size: 0.9em;
           font-weight: 300;
           padding: 0 1.3em;
+          color: inherit;
+          cursor: pointer;
+          &:hover {
+            color: hsl(136, 65%, 51%);
+            transition: color 0.3s cubic-bezier(.17,.67,.56,1.05);
+          }
         }
         p {
           color: hsl(220, 5%, 68%);
           font-size: 0.75em;
           padding: 0 1.3em;
+        }
+      }
+    }
+  }
+  @media only screen and (max-device-width: 1440px) {
+    /* Styles */
+    .hero {
+      grid-template-columns: 1.1fr 1fr;
+    
+    }
+    .why_easy {
+      .choose {
+        margin-right: 35em;
+      }
+      .products {
+        column-gap: 3em;
+      }
+    }
+    .all_articles {
+      h2 {
+        margin-left: 8em;
+      }
+      .articles {
+        & > div {
+          margin-right: 3.2em;
         }
       }
     }

@@ -5,7 +5,6 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  overflow-x: visible !important;
   .logo {
     margin-top: auto;
     margin-bottom: auto;
@@ -17,10 +16,31 @@
       display: flex;
       li {
         a {
+          position: relative;
           text-decoration: none;
           margin-right: 2em;
           color: #bcbbc0;
           font-size: 0.9em;
+          background-color: inherit;
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: hsl(136, 65%, 51%);
+            top: 2em;
+            left: 0em;
+            height: 0.2em;
+            max-width: 100%;
+            min-width: 3em;
+            opacity: 0;
+            transition: all 0.3s;
+          }
+          &:hover {
+            color: rgb(39, 35, 35);
+            transition: all 0.3s cubic-bezier(.17,.67,.61,1.12);
+            &::after {
+              opacity: 1;
+            }
+          }
         }
       }
     }
@@ -41,5 +61,18 @@
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: rgb(131, 218, 203);
+      background: linear-gradient(
+        90deg,
+        rgb(94, 207, 190) 5%,
+        rgba(88, 168, 120, 0.953) 35%,
+        rgb(29, 159, 168) 60%
+      );
+    }
+  }
+  @media only screen and (max-device-width: 1440px) {
+    /* Styles */
   }
 }
