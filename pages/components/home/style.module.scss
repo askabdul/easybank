@@ -21,6 +21,9 @@
         line-height: 1.5;
         margin-bottom: 1.7em;
       }
+      .mobile {
+        display: none;
+      }
       button {
         background: rgb(45, 193, 172);
         background: linear-gradient(
@@ -84,6 +87,9 @@
         font-size: 0.9em;
         line-height: 1.5;
       }
+      .mobi {
+        display: none;
+      }
     }
     .products {
       display: grid;
@@ -103,6 +109,12 @@
           font-size: 0.9em;
           line-height: 1.5;
           margin-bottom: 1.7em;
+        }
+        .screen {
+          display: none;
+        }
+        .mobile_screen {
+          display: none;
         }
       }
     }
@@ -153,13 +165,19 @@
           cursor: pointer;
           &:hover {
             color: hsl(136, 65%, 51%);
-            transition: color 0.3s cubic-bezier(.17,.67,.56,1.05);
+            transition: color 0.3s cubic-bezier(0.17, 0.67, 0.56, 1.05);
           }
+        }
+        .mobile {
+          display: none;
         }
         p {
           color: hsl(220, 5%, 68%);
           font-size: 0.75em;
           padding: 0 1.3em;
+        }
+        .mobile_screen {
+          display: none;
         }
       }
     }
@@ -168,7 +186,7 @@
     /* Styles */
     .hero {
       grid-template-columns: 1.1fr 1fr;
-    
+      position: unset;
     }
     .why_easy {
       .choose {
@@ -185,6 +203,138 @@
       .articles {
         & > div {
           margin-right: 3.2em;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-device-width: 375px) {
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      .brand {
+        text-align: center;
+        padding-bottom: 5em;
+        h1 {
+          font-weight: 300;
+          font-size: 2.5em;
+          text-align: center;
+        }
+        p {
+          display: none;
+        }
+        .mobile {
+          display: block;
+          color: hsl(220, 5%, 68%);
+          font-size: 1em;
+          line-height: 1.5;
+          margin-bottom: 1.7em;
+        }
+        button {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .caption_image {
+        background-image: url("./../../../public//images/bg-intro-mobile.svg");
+        .top {
+          div {
+            left: 0;
+            top: -8em;
+          }
+        }
+        .down {
+          visibility: hidden;
+        }
+      }
+    }
+    .why_easy {
+      display: unset;
+      text-align: center;
+      .choose {
+        margin-right: 0;
+        h2 {
+          font-size: 2.5em;
+        }
+        p {
+          display: none;
+        }
+        .mobi {
+          display: block;
+          color: hsl(220, 5%, 68%);
+          font-size: 1em;
+          line-height: 1.5;
+        }
+      }
+      .products {
+        display: flex;
+        flex-direction: column;
+        & > div {
+          h3 {
+            font-weight: 300;
+            font-size: 1.3em;
+          }
+          p {
+            display: none;
+          }
+          .screen {
+            display: block;
+            color: hsl(220, 5%, 68%);
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 1.7em;
+          }
+        }
+      }
+    }
+    .all_articles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & > div {
+          margin-right: auto;
+          div {
+            div {
+              div {
+                img {
+                  width: 20em;
+                  height: 15em;
+                }
+              }
+            }
+          }
+          h3 {
+            display: none;
+          }
+          .mobile {
+            display: block;
+            font-size: 1.1em;
+          font-weight: 300;
+          padding: 0 1.3em;
+          color: inherit;
+          cursor: pointer;
+          }
+          .mobile_screen {
+            display: block;
+            color: hsl(220, 5%, 68%);
+          font-size: 0.9em;
+          line-height: 1.5;
+          margin-bottom: 1.7em;
+          }
+          p {
+            display: none;
+          }
         }
       }
     }

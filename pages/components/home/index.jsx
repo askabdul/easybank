@@ -24,6 +24,11 @@ const home = () => {
             will be a one-stop-shop for spending, saving, <br />
             budgeting,investing, and much more.
           </p>
+          <p className={homestyle.mobile}>
+            Take your financial life online.Your Easybank <br />
+            account will be a one-stop-shop for spending, <br />
+            saving, budgeting,investing, and much more.
+          </p>
           <button>
             <span>Request Invite</span>
           </button>
@@ -45,6 +50,11 @@ const home = () => {
             financial hub. <br />
             Control your finances like never before.
           </p>
+          <p className={homestyle.mobi}>
+            We leverage Open Banking to turn your bank <br />
+            account into your financial hub. Control your <br /> finances like
+            never before.
+          </p>
         </div>
         <div className={homestyle.products}>
           <div className={homestyle.banking}>
@@ -56,14 +66,23 @@ const home = () => {
               track of your finances wherever you <br />
               are in the world.
             </p>
+            <p className={homestyle.screen}>
+              Our modern web and mobile applications allow <br />
+              you to keep track of your finances wherever you <br />
+              are in the world.
+            </p>
           </div>
           <div className="budgeting">
             <Image src={Budgeting} alt="budgeting product" />
             <h3>Simple Budgeting</h3>
             <p>
               See exactly where your money <br />
-              goes each month. Receive <br />
-              notifications when you're close to <br />
+              goes each month. Receive <br />notifications when you're close to your
+              <br /> hitting limits
+            </p>
+            <p className={homestyle.screen}>
+              See exactly where your money goes each month.
+              <br /> Receive notifications when you're close to <br />
               hitting your limits
             </p>
           </div>
@@ -76,6 +95,11 @@ const home = () => {
               taking control of your finances <br />
               right away
             </p>
+            <p className={homestyle.screen}>
+              We don't do branches. Open your account in
+              <br /> minutes online and start taking control of your <br />
+              finances right away
+            </p>
           </div>
           <div className="open_api">
             <Image src={Open} alt="open api product" />
@@ -85,6 +109,11 @@ const home = () => {
               pension, and much more from one <br />
               account. Tracking your money has <br />
               never been easier
+            </p>
+            <p className={homestyle.screen}>
+              Manage your savings, investments, pension, and <br />
+              much more from one account. Tracking your <br />
+              money has never been easier
             </p>
           </div>
         </div>
@@ -100,10 +129,19 @@ const home = () => {
             <h3>
               Receive money in any <br /> currency with no fees
             </h3>
+            <h3 className={homestyle.mobile}>
+              Receive money in any currency with <br />
+              no fees
+            </h3>
             <p>
               The world is getting smaller and <br /> we're becoming more
               mobile. So <br /> why should you be forced to only <br /> receive
               money in a single...
+            </p>
+            <p className={homestyle.mobile_screen}>
+              The world is getting smaller and we're <br /> becoming more
+              mobile. So why should you be <br /> forced to only receive money
+              in a single...
             </p>
           </div>
           <div className="restaurant">
@@ -114,10 +152,19 @@ const home = () => {
             <h3>
               Treat yourself without <br /> worrying about money
             </h3>
+            <h3 className={homestyle.mobile}>
+              Treat yourself without worrying <br />
+              about money
+            </h3>
             <p>
               Our simple budgeting feature <br /> allows you to separate out
               your <br /> spending and set realistic limits <br /> each month.
               That means you...
+            </p>
+            <p className={homestyle.mobile_screen}>
+              Our simple budgeting feature allows you to <br />
+              separate out your spending and set realistic <br />
+              limits each month. That means you...
             </p>
           </div>
           <div className="plane">
@@ -129,10 +176,18 @@ const home = () => {
               Take your Easybank card
               <br /> wherever you go
             </h3>
+            <h3 className={homestyle.mobile}>
+              Take your Easybank card wherever <br /> you go
+            </h3>
             <p>
               We want you to enjoy your travels. <br /> This is why we don't
               charge any <br /> fees on purchases while you're
               <br /> abroad. We'll even show you...
+            </p>
+            <p className={homestyle.mobile_screen}>
+              We want you to enjoy your travels. This is <br />
+              why we don't charge any fees on purchases <br />
+              while you're abroad. We'll even show you...
             </p>
           </div>
           <div className="confetti">
@@ -141,11 +196,19 @@ const home = () => {
             </div>
             <small>By Claire Robinson</small>
             <h3>
-              Our invite-only Beta <br /> accounts are now
+              Our invite-only Beta <br /> accounts are now live
+            </h3>
+            <h3 className={homestyle.mobile}>
+              Our invite-only Beta accounts are <br /> now live!
             </h3>
             <p>
               After a lot of hardwork by the <br /> whole team, we're excited to
               launch <br /> our closed beta. it's easy to request <br /> an
+              invite through a site...
+            </p>
+            <p className={homestyle.mobile_screen}>
+              After a lot of hardwork by the whole team, <br />we're excited to
+              launch our closed beta. it's <br /> easy to request an
               invite through a site...
             </p>
           </div>
